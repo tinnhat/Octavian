@@ -1,0 +1,17 @@
+.content-header-bg {
+  padding-top: 70px;
+  background: url(../img/xaitam.png) center no-repeat;
+  background-size: cover;
+  height: 1000px;
+  margin-bottom: 100px;
+  // position: relative;
+}
+
+.content-header {
+  margin-top: 200px;
+}
+@media screen and (max-width: 767px) {
+  .content-header {
+    white-space: normal !important;
+  }
+}

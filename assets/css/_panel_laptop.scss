@@ -1,0 +1,42 @@
+.panel-laptop {
+  position: relative;
+  margin-top: 40px;
+}
+
+.box-laptop {
+  position: absolute;
+  top: 0;
+  right: -300px;
+  background: url(../img/macbook/bg.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.screen-latop {
+  position: absolute;
+  top: 160px;
+  transform: translateX(140px);
+  background: url(../img/macbook/screen.png);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.camera-latop {
+  position: absolute;
+  top: -26px;
+  left: 50%;
+}
+.pad-top-60 {
+  padding-top: 200px;
+}
+
+@media screen and (max-width: 767px) {
+  .panel-laptop {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .box-laptop {
+    display: none;
+  }
+}

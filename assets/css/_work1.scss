@@ -1,0 +1,29 @@
+.work {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.work1-img {
+  margin-right: 140px;
+}
+@media screen and (max-width: 1024px) {
+  .work1-img {
+    width: 400px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .work1-img {
+    width: 240px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .work {
+    flex-direction: column;
+  }
+  .work1-img {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}

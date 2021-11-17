@@ -1,0 +1,82 @@
+.company {
+  margin: 0 auto;
+  margin-top: 300px;
+  max-width: 1540px;
+  background: #ff4e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9d423,
+    #ff4e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 20px;
+}
+.company-flex {
+  padding: 120px;
+  display: flex;
+  align-items: center;
+}
+.box-logo {
+  display: flex;
+  margin-left: 300px;
+  align-items: center;
+}
+.col-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.col-logo:first-child {
+  margin-right: 100px;
+}
+.logo-cafe,
+.logo-remake {
+  margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  .company-flex {
+    padding: 60px;
+  }
+  .box-logo {
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .box-logo {
+    margin-left: auto;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .company-flex {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box-logo {
+    margin-top: 60px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-logo:first-child {
+    margin-right: 40px;
+  }
+  .logo-slin,
+  .logo-remake,
+  .logo-char,
+  .logo-cafe {
+    width: 100px;
+    height: auto;
+  }
+  .col-logo {
+    align-items: center;
+  }
+  .company {
+    margin-top: 140px;
+  }
+}

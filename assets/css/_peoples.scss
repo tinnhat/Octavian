@@ -1,0 +1,127 @@
+.peoples {
+  margin-top: 260px;
+  display: flex;
+}
+.people {
+  &-left {
+    width: 40%;
+    position: relative;
+  }
+  &-right {
+    padding-top: 200px;
+    width: 60%;
+    display: flex;
+    // align-items: center;
+  }
+}
+
+.user-bg {
+  position: absolute;
+  left: -100%;
+  z-index: -1;
+}
+.user-1 {
+  position: absolute;
+  left: 40%;
+  top: 50%;
+  border-radius: 50%;
+}
+.user-2 {
+  position: absolute;
+  left: 10%;
+  bottom: -20%;
+  border-radius: 50%;
+}
+.user-3 {
+  position: absolute;
+  left: 0;
+  top: 60%;
+}
+.user-4 {
+  position: absolute;
+  left: 10%;
+  top: 20%;
+  border-radius: 50%;
+}
+.user-box {
+  position: relative;
+  margin-left: 20px;
+}
+.ngoackep {
+  position: absolute;
+  top: -24%;
+}
+.user__text {
+  color: $text-black;
+  line-height: 1.4;
+  width: 100%;
+  font-size: 30px;
+  span {
+    display: block;
+  }
+}
+.user-img {
+  width: 140px;
+  height: auto;
+  object-fit: cover;
+}
+.username {
+  margin-top: 40px;
+  font-size: 18px;
+  color: $text-gray;
+}
+@media screen and (max-width: 1023px) {
+  .user__text {
+    font-size: 24px;
+  }
+  .user-1 {
+    width: 140px;
+    height: 140px;
+  }
+  .user-2 {
+    bottom: -10%;
+  }
+  .user-4 {
+    top: 26%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .peoples {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .user-bg {
+    display: none;
+  }
+  .people-left {
+    width: 100%;
+  }
+  .people-right {
+    padding-top: 260px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-1 {
+    width: 94px;
+    height: 94px;
+    left: 36%;
+  }
+  .user-2 {
+    display: none;
+  }
+  .user-3 {
+    width: 90px;
+    height: 90px;
+  }
+  .user-4 {
+    width: 94px;
+    height: 94px;
+    left: 70%;
+  }
+  .user-img {
+    width: 200px;
+    height: auto;
+  }
+}
